@@ -31,7 +31,6 @@
 			align-items: center;
 			gap: 24px;
 			font-weight: 500;
-			font-family: 'Montserrat', sans-serif;
 
 			.user {
 				display: flex;
@@ -92,8 +91,8 @@
 		display: flex;
 		justify-content: space-between;
 		font-weight: 300;
-		color: gray;
-		font-family: 'Montserrat', sans-serif;
+		color: #242424;
+		font-size: 15px;
 	}
 
 	/* Media query for small screens (e.g., mobile) */
@@ -108,7 +107,7 @@
 				.user {
 					.options {
 						width: 100px;
-						font-weight: 300;
+						font-weight: 400;
 					}
 				}
 			}
