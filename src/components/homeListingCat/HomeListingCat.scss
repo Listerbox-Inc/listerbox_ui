@@ -1,0 +1,112 @@
+.homeListingCat {
+	justify-content: center;
+	display: flex;
+
+	.container {
+		max-width: 1400px; /* Changed width to max-width for responsiveness */
+		width: 100%;
+		display: flex;
+		flex-direction: column; /* Stack the content vertically */
+		align-items: center; /* Center horizontally */
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		.categories {
+			text-align: center; /* Center the text within the container */
+
+			h1 {
+				font-weight: 500;
+				margin: 10px 0;
+				font-size: 30px;
+			}
+
+			.category-list {
+				display: flex;
+				flex-wrap: wrap; /* Ensure buttons wrap to the next line when needed */
+				justify-content: center; /* Center buttons horizontally */
+				gap: 10px; /* Add spacing between buttons */
+
+				button {
+					margin: 10px;
+					color: #f32a4c;
+					background-color: transparent;
+					border: 1px solid #f32a4c;
+					padding: 5px 20px;
+					border-radius: 20px;
+					cursor: pointer;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			.categories {
+				h1 {
+					font-size: 24px; /* Adjust font size for smaller screens */
+					margin-bottom: 20px;
+				}
+				.category-list {
+					button {
+						font-size: 14px; /* Adjust font size for smaller screens */
+					}
+				}
+			}
+		}
+	}
+}
+
+// .homeListingCat {
+// 	justify-content: center;
+// 	display: flex;
+
+// 	.container {
+// 		width: 1400px;
+// 		display: flex;
+// 		align-items: center;
+// 		padding-top: 40px;
+// 		padding-bottom: 40px;
+
+// 		.categories {
+// 			h1 {
+// 				text-align: left;
+// 				padding-bottom: 30px;
+// 				padding-top: 10px;
+// 				font-weight: 500;
+// 			}
+
+// 			.category-list {
+// 				align-items: right;
+// 				button {
+// 					margin: 10px 30px;
+// 					color: #f32a4c;
+// 					background-color: transparent;
+// 					border: 1px solid #f32a4c;
+// 					padding: 5px 10px;
+// 					border-radius: 20px;
+// 					cursor: pointer;
+// 					padding: 10px 40px;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	@media (max-width: 768px) {
+// 		.container {
+// 			.categories {
+// 				h1 {
+// 					text-align: left;
+// 					margin-left: 10px;
+// 					font-size: 30px;
+// 				}
+// 				.category-list {
+// 					align-items: center;
+// 					button {
+// 						margin: 5px 5px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

@@ -1,0 +1,188 @@
+.home {
+	.features {
+		background-color: #faf4f5;
+		display: flex;
+		justify-content: center;
+		padding: 100px 0;
+
+		.container {
+			width: 1400px;
+			display: flex;
+			align-items: center;
+			gap: 50px;
+			.item-right {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+
+				h1 {
+					font-weight: 500;
+					margin-bottom: 10px;
+				}
+				p {
+					color: #242424;
+					line-height: 1.5;
+					font-size: 15px;
+					font-weight: 300;
+				}
+				.title {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					font-weight: 500;
+					font-size: 18px;
+				}
+			}
+			.item-left {
+				img {
+					// max-width: 100%; /* Ensure the image doesn't exceed its container */
+					// height: auto; /* Maintain the image's aspect ratio */
+				}
+			}
+		}
+	}
+
+	.features-dark {
+		background-color: #faf4f5;
+		display: flex;
+		justify-content: center;
+		padding: 100px 0;
+
+		.container {
+			width: 1400px;
+			display: flex;
+			align-items: center;
+			gap: 50px;
+
+			.item-right {
+				img {
+					width: 720px;
+				}
+			}
+			.item-left {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+
+				h1 {
+					font-weight: 500;
+					margin-bottom: 10px;
+				}
+				p {
+					color: #242424;
+					line-height: 1.5;
+					font-size: 15px;
+					font-weight: 300;
+				}
+
+				button {
+					background-color: #f32a4c;
+					color: white;
+					padding: 10px 20px;
+					border-radius: 5px;
+					font-size: 16px;
+					cursor: pointer;
+					margin-top: 20px;
+					border: none;
+					width: max-content;
+				}
+			}
+		}
+	}
+
+	/* Media query for small screens (e.g., mobile) */
+	@media (max-width: 768px) {
+		.features {
+			.container {
+				flex-direction: column; /* Stack elements vertically for mobile */
+				align-items: center; /* Center all elements horizontally */
+				text-align: center; /* Center text within elements */
+				gap: 30px; /* Add some spacing between stacked elements */
+
+				.item-right {
+					width: 100%; /* Make the content take up the full width */
+
+					.title {
+						margin: 0 10px;
+						font-size: 16px;
+					}
+
+					h1 {
+						text-align: left;
+						margin: 0 10px;
+						font-size: 25px;
+					}
+
+					p {
+						margin: 0 10px;
+						text-align: left;
+						font-size: 14px;
+					}
+				}
+
+				.item-left {
+					img {
+						width: 90%; /* Ensure the image takes up the full width */
+						margin-top: -55px;
+					}
+				}
+			}
+		}
+
+		.features-dark {
+			.container {
+				flex-direction: column; /* Stack elements vertically for mobile */
+				align-items: center; /* Center all elements horizontally */
+				text-align: center; /* Center text within elements */
+				gap: 30px; /* Add some spacing between stacked elements */
+
+				.item-left {
+					width: 100%; /* Make the content take up the full width */
+
+					.intro {
+						margin-top: -35px;
+					}
+
+					h1 {
+						text-align: center;
+						margin: 0 10px;
+						font-size: 25px;
+					}
+
+					p {
+						margin: 0 10px;
+						text-align: center;
+						font-size: 14px;
+					}
+
+					.btn {
+						display: block; /* Ensures the button takes up the full width */
+						margin: 0 auto; /* Center the button horizontally */
+					}
+				}
+
+				.item-right {
+					img {
+						width: 90%; /* Ensure the image takes up the full width */
+						// margin-top: -55px;
+					}
+				}
+			}
+		}
+
+		.listings {
+			display: flex;
+			justify-content: center;
+
+			.container {
+				h1 {
+					margin: 0 10px;
+					font-size: 25px;
+				}
+				.listing-card-wrapper {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}

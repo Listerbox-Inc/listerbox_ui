@@ -1,0 +1,169 @@
+.featured {
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	background-color: #f32a4c;
+	color: white;
+
+	.container {
+		width: 1400px;
+		display: flex;
+		align-items: center;
+
+		.left {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			width: 70%;
+
+			.text {
+				line-height: 1.5;
+				font-weight: 300;
+				font-size: 15px;
+			}
+
+			h1 {
+				i {
+					font-weight: 300;
+				}
+			}
+
+			.search {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				background-color: #fff;
+				border-radius: 5px;
+				.searchInput {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					margin-left: 10px;
+
+					input {
+						border: none;
+						outline: none;
+						width: 400px;
+						height: 40px;
+					}
+				}
+
+				button {
+					width: 120px;
+					height: 50px;
+					border: none;
+					background-color: #ff5f7a;
+					color: white;
+					cursor: pointer;
+				}
+			}
+
+			.popular {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				span {
+				}
+				button {
+					color: white;
+					background-color: transparent;
+					border: 1px solid white;
+					padding: 5px 10px;
+					border-radius: 20px;
+					cursor: pointer;
+				}
+			}
+		}
+		.right {
+			height: 100%;
+
+			img {
+				height: 100%;
+				object-fit: contain;
+				margin-left: 20rem;
+			}
+		}
+	}
+}
+
+/* Media query for small screens (e.g., mobile) */
+@media (max-width: 768px) {
+	.featured {
+		height: 300px;
+		.container {
+			width: 1700px;
+			flex-direction: column; /* Stack elements vertically for mobile */
+			align-items: center; /* Center all elements horizontally */
+			// text-align: center; /* Center text within elements */
+
+			.left {
+				// display: flex;
+				// flex-direction: column;
+				// gap: 30px;
+				// width: 70%;
+
+				h1 {
+					font-size: 30px;
+					padding-top: 80px;
+
+					i {
+						font-weight: 300;
+					}
+				}
+
+				span {
+					display: none;
+				}
+
+				.search {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					background-color: #fff;
+					border-radius: 5px;
+					.searchInput {
+						display: flex;
+						align-items: center;
+						gap: 1px;
+
+						input {
+							border: none;
+							outline: none;
+							width: 220px;
+							height: 40px;
+						}
+					}
+
+					button {
+						width: 50px;
+						height: 50px;
+						border: none;
+						background-color: #ff5f7a;
+						color: white;
+						cursor: pointer;
+						padding: 10px;
+					}
+				}
+
+				.popular {
+					display: none;
+					span {
+					}
+					button {
+						color: white;
+						background-color: transparent;
+						border: 1px solid white;
+						padding: 5px 10px;
+						border-radius: 20px;
+						cursor: pointer;
+					}
+				}
+			}
+			.right {
+				img {
+					display: none;
+				}
+			}
+		}
+	}
+}
