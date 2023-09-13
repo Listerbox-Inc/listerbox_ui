@@ -1,0 +1,54 @@
+.login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	form {
+		width: 360px;
+		padding: 100px 0px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		h1 {
+			margin-bottom: 20px;
+			font-weight: 500;
+		}
+
+		label {
+			font-size: 16px;
+			font-weight: 300;
+		}
+
+		input,
+		textarea {
+			padding: 20px;
+			border: 1px solid rgb(216, 214, 214);
+		}
+
+		button {
+			border: none;
+			padding: 20px;
+			color: white;
+			font-weight: 500;
+			font-size: 18px;
+			background-color: #f32a4c;
+			cursor: pointer;
+		}
+
+		span {
+			color: red;
+			font-size: 12px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		form {
+			width: 90%;
+			h1 {
+				// font-weight: 500;
+				font-size: 20px;
+			}
+		}
+	}
+}

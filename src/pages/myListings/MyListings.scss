@@ -1,0 +1,88 @@
+.myListings {
+	display: flex;
+	justify-content: center;
+
+	// #ff5f7a
+
+	.container {
+		width: 1400px;
+		padding: 50px 0px;
+
+		.title {
+			display: flex;
+			justify-content: space-between;
+
+			button {
+				background-color: #f32a4c;
+				color: white;
+				font-weight: 500;
+				border: none;
+				padding: 10px;
+				cursor: pointer;
+			}
+		}
+
+		table {
+			width: 100%;
+
+			tr {
+				height: 50px;
+				th {
+					text-align: left;
+					color: #242424;
+					line-height: 1.5;
+				}
+				td {
+					color: #242424;
+					line-height: 1.5;
+					font-size: 15px;
+					font-weight: 300;
+					.image {
+						width: 50px;
+						height: 25px;
+						object-fit: cover;
+					}
+
+					.delete {
+						width: 20px;
+						cursor: pointer;
+					}
+				}
+				&:nth-child(even) {
+					background-color: #f8f0f1;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			padding: 20px 10px;
+
+			.title {
+				h1 {
+					font-size: 25px;
+				}
+			}
+
+			table {
+				tr {
+					th {
+						font-size: 13px;
+						text-align: center;
+					}
+
+					td {
+						font-size: 13px;
+						text-align: center;
+
+						.image {
+							width: 30px;
+							height: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
