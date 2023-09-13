@@ -46,7 +46,7 @@ const Add = () => {
 							cols='0'
 							rows='16'
 						></textarea>
-						<label htmlFor=''>Price</label>
+						<label htmlFor=''>Price(₦)</label>
 						<input type='number' />
 						<button>Create</button>
 					</div>
