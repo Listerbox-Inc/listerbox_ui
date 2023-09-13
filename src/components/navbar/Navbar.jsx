@@ -45,7 +45,10 @@ const Navbar = () => {
 				<div className='links'>
 					<span>Discover</span>
 					{!currentUser?.isOwner && <span>Become a renter</span>}
-					<span>Sign in</span>
+					{/* <span>Sign in</span> */}
+					<Link className='link' to='/login'>
+						Sign in
+					</Link>
 					{!currentUser && <button>Join</button>}
 					{currentUser && (
 						<div className='user' onClick={() => setOpen(!open)}>

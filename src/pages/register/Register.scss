@@ -1,0 +1,147 @@
+.register {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	form {
+		width: 750px;
+		padding: 100px 0px;
+		display: flex;
+		gap: 120px;
+
+		h1 {
+			margin-bottom: 15px;
+			font-weight: 500;
+		}
+
+		.left,
+		.right {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			justify-content: space-between;
+
+			label {
+				font-size: 16px;
+				font-weight: 300;
+			}
+
+			input,
+			textarea {
+				padding: 20px;
+				border: 1px solid rgb(216, 214, 214);
+			}
+
+			span {
+				font-size: 13px;
+				font-weight: 300;
+			}
+
+			button {
+				border: none;
+				padding: 20px;
+				color: white;
+				font-weight: 500;
+				font-size: 18px;
+				background-color: #f32a4c;
+				cursor: pointer;
+			}
+
+			.toggle {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+
+				.switch {
+					position: relative;
+					display: inline-block;
+					width: 50px;
+					height: 24px;
+				}
+
+				/* Hide default HTML checkbox */
+				.switch input {
+					opacity: 0;
+					width: 0;
+					height: 0;
+				}
+
+				.slider {
+					position: absolute;
+					cursor: pointer;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-color: #ccc;
+					-webkit-transition: 0.4s;
+					transition: 0.4s;
+					border-radius: 24px;
+				}
+
+				.slider:before {
+					position: absolute;
+					content: '';
+					height: 16px;
+					width: 16px;
+					left: 4px;
+					bottom: 4px;
+					background-color: white;
+					-webkit-transition: 0.4s;
+					transition: 0.4s;
+					border-radius: 50%;
+				}
+
+				input:checked + .slider {
+					background-color: #f32a4c;
+				}
+
+				input:focus + .slider {
+					box-shadow: 0 0 1px #f32a4c;
+				}
+
+				input:checked + .slider:before {
+					-webkit-transform: translateX(26px);
+					-ms-transform: translateX(26px);
+					transform: translateX(26px);
+				}
+			}
+		}
+	}
+
+	/* Media query for mobile (up to 767px width) */
+	@media (max-width: 767px) {
+		form {
+			width: 90%; /* Full width on mobile */
+			gap: 20px; /* Reduce gap between elements on mobile */
+			// margin-top: -40px;
+
+			input {
+				padding: 10px 0px 10px 10px;
+			}
+
+			.left,
+			.right {
+				flex: 1;
+				width: 100%; /* Full width on mobile */
+
+				h1 {
+					font-size: 20px; /* Adjust font size for mobile */
+				}
+
+				label,
+				textarea,
+				span,
+				button,
+				.toggle {
+					width: 100%; /* Full width on mobile */
+				}
+
+				.toggle {
+					// flex-direction: column; /* Stack toggle elements vertically on mobile */
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+// Add.scss
+.add {
+	display: flex;
+	justify-content: center;
+
+	.container {
+		width: 1000px;
+		padding: 50px 0px;
+
+		h1 {
+			width: max-content;
+			margin-bottom: 30px;
+			font-weight: 300;
+		}
+
+		.sections {
+			display: flex;
+			justify-content: space-between;
+			gap: 100px;
+
+			label {
+				font-size: 18px;
+				font-weight: 300;
+			}
+
+			.info {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				justify-content: space-between;
+
+				input,
+				select,
+				textarea {
+					padding: 20px;
+				}
+
+				button {
+					border: none;
+					padding: 20px;
+					color: white;
+					font-weight: 500;
+					font-size: 18px;
+					background-color: #f32a4c;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			width: 90%; /* Adjust the width for mobile devices */
+		}
+
+		.sections {
+			flex-direction: column; /* Stack elements on top of each other */
+			gap: 20px; /* Add some spacing between elements */
+
+			.info {
+				input,
+				select,
+				textarea {
+					padding: 10px; /* Reduce padding for mobile */
+				}
+
+				button {
+					padding: 10px; /* Reduce padding for mobile */
+				}
+			}
+		}
+	}
+}
