@@ -80,6 +80,13 @@ function Register() {
 						placeholder='No. 1 lekki  road, Lagos, Nigeria'
 						onChange={handleChange}
 					/>
+					<label htmlFor=''>Phone</label>
+					<input
+						name='phone'
+						type='text'
+						placeholder='080 xxxx xxx x'
+						onChange={handleChange}
+					/>
 					<h1>Do you want to rent out an item?</h1>
 					<div className='toggle'>
 						<label htmlFor=''>Activate the owner account</label>
